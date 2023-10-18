@@ -12,6 +12,9 @@ import Error from './components/pages/Error/Error.jsx';
 import Register from './components/pages/Register/Register.jsx';
 import Login from './components/pages/Login/Login.jsx';
 import Shop from './components/pages/Shop/Shop.jsx';
+import AuthProvider from './components/provider/AuthProvider.jsx';
+import PrivateRouter from './PrivateRouter/PrivateRouter.jsx';
+import AddProduct from './components/pages/AddProduct/AddProduct.jsx';
 
 const router = createBrowserRouter([
   {
@@ -33,7 +36,11 @@ const router = createBrowserRouter([
       },
       {
         path: '/shop',
-        element: <Shop></Shop>
+        element: <PrivateRouter><Shop></Shop></PrivateRouter>
+      },
+      {
+        path: '/addproduct',
+        element: <AddProduct></AddProduct>
       }
     ]
   },
@@ -41,6 +48,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </React.StrictMode>,
 )

@@ -1,11 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { AuthContext } from '../../provider/AuthProvider';
 
 const Navbar = () => {
+    const { user, logOut } = useContext(AuthContext)
+
+    const handleLogOut = () => {
+        logOut()
+            .then()
+            .catch()
+    }
 
     const navLinks = <>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/shop'>Shop</Link></li>
+        <li><Link to='/addproduct'>Add Product</Link></li>
         <li><Link to='/about'>About</Link></li>
         <li><Link to='/contact'>Contact</Link></li>
     </>
@@ -22,7 +31,7 @@ const Navbar = () => {
                                 {navLinks}
                             </ul>
                         </div>
-                        <Link to='/'><img src="https://i.ibb.co/pxQLB1w/logo-1.png" alt="" /></Link>
+                        <Link to='/'><img className='md:w-36 w-28 rounded-xl' src="https://www.robiulelectronics.com/img/upload/20170827081056963596180_21124116_1834692093227634_407323248_n.png" alt="" /></Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu-horizontal px-1 text-lg text-white menu-mrg">
@@ -47,23 +56,32 @@ const Navbar = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="dropdown dropdown-end">
-                            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                <div className="w-10 rounded-full">
-                                    <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+                        <div>
+                            {
+                                user ? <div className="dropdown dropdown-end">
+                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                        <div className="w-14 rounded-full">
+                                            {
+                                                user && <img className="w-14 h-14 rounded-full" src={user.photoURL} alt="" />
+                                            }
+                                        </div>
+                                    </label>
+                                    <ul tabIndex={0} className="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
+                                        <li>
+                                            <a className="justify-between">
+                                                {user?.displayName}
+                                                <span className="badge">New</span>
+                                            </a>
+                                        </li>
+
+                                        <li><button className="font-semibold" onClick={handleLogOut} >Log Out</button></li>
+                                    </ul>
                                 </div>
-                            </label>
-                            <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                                <li>
-                                    <a className="justify-between">
-                                        Profile
-                                        <span className="badge">New</span>
-                                    </a>
-                                </li>
-                                <li><a>Settings</a></li>
-                                <li><a>Logout</a></li>
-                            </ul>
+                                    :
+                                    <Link to='/login'><button className="btn px-8">Login</button></Link>
+                            }
                         </div>
+
                     </div>
                 </div>
             </div>

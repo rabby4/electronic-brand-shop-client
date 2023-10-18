@@ -1,19 +1,80 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { IoIosEyeOff, IoIosEye } from 'react-icons/io';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../provider/AuthProvider';
+import { updateProfile } from 'firebase/auth';
+import Swal from 'sweetalert2';
 
 
 const Register = () => {
-    const [showPassword, setShowPassword] = useState(false)
+    const { createUser } = useContext(AuthContext);
+    const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate()
+    const handleRegister = e => {
+        e.preventDefault();
+        const form = e.target;
+        const email = form.email.value;
+        const name = form.name.value;
+        const photo = form.photo.value;
+        const password = form.password.value;
+
+        if (password.length < 6) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Registration Failed',
+                text: 'Password should be at least 6 characters',
+            })
+            return
+        } else if (!/(?=.*?[A-Z])/.test(password)) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Registration Failed',
+                text: 'Password should be at least one Uppercase',
+            })
+            return;
+        } else if (!/(?=.*?[#?!@$%^&*-])/.test(password)) {
+            Swal.fire({
+                icon: 'error',
+                title: 'Registration Failed',
+                text: 'Password should be at least one special character',
+            })
+            return;
+        }
+
+        createUser(email, password)
+            .then(result => {
+                updateProfile(result.user, {
+                    displayName: name,
+                    photoURL: photo
+                })
+                    .then(() => {
+                        navigate(location?.state ? location.state : '/')
+                    })
+                Swal.fire(
+                    'Good job!',
+                    'Registration Successful!',
+                    'success'
+                )
+            })
+            .catch(error => {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Registration Failed',
+                    text: 'The email already in use',
+                })
+            })
+
+
+    }
 
     return (
         <div>
             <div className="max-w-7xl h-screen flex items-center mx-auto lg:px-0 md:px-0 px-5">
                 <div className="card flex-shrink-0 w-full max-w-lg shadow-xl mx-auto">
                     <div className='mt-10 mb-5'>
-                        <h2 className='text-center text-4xl font-semibold'>Register Now</h2>
+                        <h2 className='text-center text-5xl font-bold'>Register Now</h2>
                     </div>
-                    <form className="card-body">
+                    <form onSubmit={handleRegister} className="card-body">
                         <div className="form-control mb-3">
                             <label className="label">
                                 <span className="label-text font-medium">Email</span>
