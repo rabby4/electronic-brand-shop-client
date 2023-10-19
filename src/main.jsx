@@ -16,6 +16,9 @@ import AuthProvider from './components/provider/AuthProvider.jsx';
 import PrivateRouter from './PrivateRouter/PrivateRouter.jsx';
 import AddProduct from './components/pages/AddProduct/AddProduct.jsx';
 import UpdateProduct from './components/pages/UpdateProduct/UpdateProduct.jsx';
+import Samsung from './components/pages/Brands/Samsung.jsx';
+import Apple from './components/pages/Brands/Apple.jsx';
+import ProductDetails from './components/pages/ProductDetails/ProductDetails.jsx';
 
 const router = createBrowserRouter([
   {
@@ -46,6 +49,20 @@ const router = createBrowserRouter([
       {
         path: '/updateproduct',
         element: <UpdateProduct></UpdateProduct>
+      },
+      {
+        path: '/productdetails/:id',
+        element: <ProductDetails></ProductDetails>
+      },
+      {
+        path: '/samsung',
+        element: <Samsung></Samsung>,
+        loader: () => fetch('http://localhost:5000/products')
+      },
+      {
+        path: '/apple',
+        element: <Apple></Apple>,
+        loader: () => fetch('http://localhost:5000/products')
       }
     ]
   },

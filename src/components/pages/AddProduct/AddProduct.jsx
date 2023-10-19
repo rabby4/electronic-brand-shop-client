@@ -11,8 +11,22 @@ const AddProduct = () => {
         const price = form.price.value;
         const ratting = form.ratting.value;
         const description = form.description.value;
-        const productInfo = { title, brand, category, photo, price, ratting, description }
-        console.log(productInfo)
+        const newProduct = { title, brand, category, photo, price, ratting, description }
+        console.log(newProduct)
+
+        fetch('http://localhost:5000/products', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(newProduct)
+        })
+            .then(res => res.json())
+            .then(data => {
+                console.log(data)
+            })
+
+
     }
 
 
@@ -49,6 +63,7 @@ const AddProduct = () => {
                                 <option value='laptop'>Laptop</option>
                                 <option value='drone'>Drone</option>
                                 <option value='smartWatch'>Smart Watch</option>
+                                <option value='headphone'>Headphone</option>
                             </select>
                         </div>
                     </div>
