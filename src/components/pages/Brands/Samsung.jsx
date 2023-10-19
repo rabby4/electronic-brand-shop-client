@@ -4,7 +4,6 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-import { useState } from "react";
 
 const Samsung = () => {
     const allProducts = useLoaderData()
@@ -76,7 +75,7 @@ const Samsung = () => {
                                                 <div className="space-y-3">
                                                     <div className="rating">
                                                         <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" checked />
+                                                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
                                                         <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
                                                         <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
                                                         <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
@@ -89,8 +88,9 @@ const Samsung = () => {
                                                 </div>
                                             </div>
                                             <div className="flex gap-3">
-                                                <Link to={`/productdetails/${product._id}`}><button className="btn bg-orange-600 hover:bg-orange-500 text-white">Details</button></Link>
-                                                <Link><button className="btn bg-orange-600 hover:bg-orange-500 text-white">Update</button></Link>
+                                                <Link className="btn w-1/2 bg-orange-600 hover:bg-orange-500 text-white" to={`/productdetails/${product._id}`}>
+                                                    <button >Details</button></Link>
+                                                <Link className="btn w-1/2 bg-orange-600 hover:bg-orange-500 text-white" ><button>Update</button></Link>
                                             </div>
 
                                         </div>

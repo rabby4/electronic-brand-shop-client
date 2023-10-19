@@ -52,7 +52,8 @@ const router = createBrowserRouter([
       },
       {
         path: '/productdetails/:id',
-        element: <ProductDetails></ProductDetails>
+        element: <ProductDetails></ProductDetails>,
+        loader: () => fetch('http://localhost:5000/products')
       },
       {
         path: '/samsung',
