@@ -10,7 +10,7 @@ const Error = () => {
                     error.status === 404 && <div className="text-center">
                         <h2 className="text-4xl font-bold mb-4">Page Not Found</h2>
                         <Link to='/'>
-                            <button className="btn text-center bg-black text-white hover:bg-slate-700">Go Back Home</button>
+                            <button className="btn text-center bg-orange-500 text-white hover:bg-orange-400">Go Back Home</button>
                         </Link>
                     </div>
                 }

@@ -1,7 +1,6 @@
 
-const AddProduct = () => {
-
-    const handleAddProduct = e => {
+const UpdateProduct = () => {
+    const handleUpdateProduct = e => {
         e.preventDefault()
         const form = e.target;
         const title = form.title.value;
@@ -10,19 +9,16 @@ const AddProduct = () => {
         const photo = form.photo.value;
         const price = form.price.value;
         const ratting = form.ratting.value;
-        const description = form.description.value;
-        const productInfo = { title, brand, category, photo, price, ratting, description }
+        const productInfo = { title, brand, category, photo, price, ratting }
         console.log(productInfo)
     }
-
-
     return (
         <div className='container mx-auto'>
             <div className='my-10'>
-                <h2 className='text-center text-5xl font-bold'>Add your Product</h2>
+                <h2 className='text-center text-5xl font-bold'>Update Product</h2>
             </div>
             <div className='card flex-shrink-0 max-w-3xl shadow-xl mx-auto'>
-                <form onSubmit={handleAddProduct} className="card-body">
+                <form onSubmit={handleUpdateProduct} className="card-body">
                     <div className="form-control mb-3">
                         <label className="label">
                             <span className="label-text font-semibold">Product Name</span>
@@ -73,15 +69,9 @@ const AddProduct = () => {
                             <input type="text" placeholder="Product Ratting..." name='ratting' className="input input-bordered" required />
                         </div>
                     </div>
-                    <div className="form-control mb-3 w-full">
-                        <label className="label">
-                            <span className="label-text font-semibold">Product Short Description</span>
-                        </label>
-                        <textarea className="textarea textarea-bordered" name='description' placeholder="Write short description..."></textarea>
-                    </div>
 
                     <div className="form-control">
-                        <button className="btn bg-orange-600 hover:bg-orange-500 text-white text-base">Add Your Product</button>
+                        <button className="btn bg-orange-600 hover:bg-orange-500 text-white text-base">Update Product</button>
                     </div>
                 </form>
             </div>
@@ -89,4 +79,4 @@ const AddProduct = () => {
     );
 };
 
-export default AddProduct;
+export default UpdateProduct;

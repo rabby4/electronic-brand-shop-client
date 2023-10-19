@@ -15,6 +15,7 @@ import Shop from './components/pages/Shop/Shop.jsx';
 import AuthProvider from './components/provider/AuthProvider.jsx';
 import PrivateRouter from './PrivateRouter/PrivateRouter.jsx';
 import AddProduct from './components/pages/AddProduct/AddProduct.jsx';
+import UpdateProduct from './components/pages/UpdateProduct/UpdateProduct.jsx';
 
 const router = createBrowserRouter([
   {
@@ -41,6 +42,10 @@ const router = createBrowserRouter([
       {
         path: '/addproduct',
         element: <AddProduct></AddProduct>
+      },
+      {
+        path: '/updateproduct',
+        element: <UpdateProduct></UpdateProduct>
       }
     ]
   },

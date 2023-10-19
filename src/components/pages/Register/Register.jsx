@@ -10,6 +10,7 @@ const Register = () => {
     const { createUser } = useContext(AuthContext);
     const [showPassword, setShowPassword] = useState(false);
     const navigate = useNavigate()
+
     const handleRegister = e => {
         e.preventDefault();
         const form = e.target;
