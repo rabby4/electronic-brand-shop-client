@@ -90,7 +90,7 @@ const Samsung = () => {
                                             <div className="flex gap-3">
                                                 <Link className="btn w-1/2 bg-orange-600 hover:bg-orange-500 text-white" to={`/productdetails/${product._id}`}>
                                                     <button >Details</button></Link>
-                                                <Link className="btn w-1/2 bg-orange-600 hover:bg-orange-500 text-white" ><button>Update</button></Link>
+                                                <Link to={`/updateproduct/${product._id}`} className="btn w-1/2 bg-orange-600 hover:bg-orange-500 text-white" ><button>Update</button></Link>
                                             </div>
 
                                         </div>

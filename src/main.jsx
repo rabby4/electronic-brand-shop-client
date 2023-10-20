@@ -19,6 +19,10 @@ import UpdateProduct from './components/pages/UpdateProduct/UpdateProduct.jsx';
 import Samsung from './components/pages/Brands/Samsung.jsx';
 import Apple from './components/pages/Brands/Apple.jsx';
 import ProductDetails from './components/pages/ProductDetails/ProductDetails.jsx';
+import Acer from './components/pages/Brands/Acer.jsx';
+import Dell from './components/pages/Brands/Dell.jsx';
+import Xiaomi from './components/pages/Brands/Xiaomi.jsx';
+import Hp from './components/pages/Brands/Hp.jsx';
 
 const router = createBrowserRouter([
   {
@@ -28,7 +32,8 @@ const router = createBrowserRouter([
     children: [
       {
         path: '/',
-        element: <Home></Home>
+        element: <Home></Home>,
+        loader: () => fetch('http://localhost:5000/products')
       },
       {
         path: '/register',
@@ -47,8 +52,9 @@ const router = createBrowserRouter([
         element: <AddProduct></AddProduct>
       },
       {
-        path: '/updateproduct',
-        element: <UpdateProduct></UpdateProduct>
+        path: '/updateproduct/:id',
+        element: <UpdateProduct></UpdateProduct>,
+        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
       },
       {
         path: '/productdetails/:id',
@@ -63,6 +69,26 @@ const router = createBrowserRouter([
       {
         path: '/apple',
         element: <Apple></Apple>,
+        loader: () => fetch('http://localhost:5000/products')
+      },
+      {
+        path: '/acer',
+        element: <Acer></Acer>,
+        loader: () => fetch('http://localhost:5000/products')
+      },
+      {
+        path: '/dell',
+        element: <Dell></Dell>,
+        loader: () => fetch('http://localhost:5000/products')
+      },
+      {
+        path: '/hp',
+        element: <Hp></Hp>,
+        loader: () => fetch('http://localhost:5000/products')
+      },
+      {
+        path: '/xiaomi',
+        element: <Xiaomi></Xiaomi>,
         loader: () => fetch('http://localhost:5000/products')
       }
     ]
