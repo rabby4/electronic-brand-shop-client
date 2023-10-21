@@ -55,7 +55,7 @@ const Navbar = () => {
                                 </label>
                             </Link>
                         </div>
-                        <div>
+                        <div className='z-50'>
                             {
                                 user ? <div className="dropdown dropdown-end">
                                     <label tabIndex={0} className="btn btn-ghost btn-circle avatar">

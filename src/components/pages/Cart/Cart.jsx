@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { MdArrowForwardIos } from 'react-icons/md';
+import Swal from 'sweetalert2';
 
 const Cart = () => {
     const cartItem = useLoaderData()
@@ -32,12 +33,16 @@ const Cart = () => {
             .then(res => res.json())
             .then(data => {
                 if (data.deletedCount > 0) {
-                    console.log('delete successfully')
+                    Swal.fire(
+                        'Product Deleted!',
+                        'Your 1 product has been deleted from cart.',
+                        'success'
+                    )
                     const remainingUsers = restCartItem.filter(user => user._id !== _id)
                     setRestCartItem(remainingUsers)
                 }
+                // window.location.reload()
             })
-        console.log(_id)
     }
 
     return (
@@ -91,7 +96,7 @@ const Cart = () => {
                                                 <p><strong>$</strong> {item.price}</p>
                                             </td>
                                             <td className='w-1/12'>
-                                                <button onClick={() => deleteProduct(item._id)} className="btn btn-ghost btn-xs">X</button>
+                                                <button onClick={() => deleteProduct(item._id)} className="btn btn-ghost hover:bg-red-500 hover:text-white text-xl">X</button>
                                             </td>
                                         </tr>)
                                     }

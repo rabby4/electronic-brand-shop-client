@@ -11,3 +11,8 @@ body {
 .menu-mrg li {
     margin: 0px 20px;
 }
+
+button.swal2-confirm.swal2-styled {
+    background: #f97316;
+    padding: 10px 60px;
+}

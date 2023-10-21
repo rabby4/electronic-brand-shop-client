@@ -47,6 +47,11 @@ const Login = () => {
             })
             .catch(error => {
                 console.log(error)
+                Swal.fire({
+                    icon: 'Error',
+                    title: 'Oops...',
+                    text: 'You entered wrong email and password!',
+                })
             })
     }
 
@@ -84,10 +89,10 @@ const Login = () => {
                             <FcGoogle></FcGoogle>
                             <span>Login with Google</span>
                         </button>
-                        <button className='flex items-center w-full py-2 mt-3 border-2 border-gray-700 justify-center gap-2 rounded-md hover:text-orange-600 hover:border-orange-600 duration-300'>
+                        {/* <button className='flex items-center w-full py-2 mt-3 border-2 border-gray-700 justify-center gap-2 rounded-md hover:text-orange-600 hover:border-orange-600 duration-300'>
                             <BsGithub></BsGithub>
                             <span>Login with Github</span>
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </div>

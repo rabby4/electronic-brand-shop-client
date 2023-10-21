@@ -1,12 +1,15 @@
 import React, { useState } from 'react';
-import { useLoaderData, useParams } from 'react-router-dom';
+import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { IoArrowUndoSharp } from 'react-icons/io5';
+import Swal from 'sweetalert2';
 
 const ProductDetails = () => {
     const [counter, setCounter] = useState(0);
     const allProducts = useLoaderData()
     const { id } = useParams()
     const product = allProducts.find(product => product._id === id)
+
+    console.log(product)
 
     const incrementCounter = () => {
         setCounter(counter + 1);
@@ -19,7 +22,6 @@ const ProductDetails = () => {
     };
 
     const addToCart = (e) => {
-        e.preventDefault()
         fetch('http://localhost:5000/cart', {
             method: 'POST',
             headers: {
@@ -28,13 +30,25 @@ const ProductDetails = () => {
             body: JSON.stringify(product)
         })
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => {
+                console.log(data)
+                if (data.acknowledged === true) {
+                    Swal.fire(
+                        'Good job!',
+                        'Logged in successful with Google!',
+                        'success'
+                    )
+                    // window.location.reload()
+                }
+            })
     }
 
     return (
         <div className='container mx-auto'>
             <div className='my-10'>
-                <button className='flex items-center gap-2 font-medium hover:text-orange-500'><IoArrowUndoSharp></IoArrowUndoSharp>Back to Shop</button>
+                <Link to='/shop'>
+                    <button className='flex items-center gap-2 font-medium hover:text-orange-500'><IoArrowUndoSharp></IoArrowUndoSharp>Back to Shop</button>
+                </Link>
             </div>
             <div className="card lg:card-side">
                 <div className='w-1/2'>

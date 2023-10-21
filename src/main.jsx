@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
 import './index.css'
 import {
   createBrowserRouter,
@@ -20,10 +19,10 @@ import Samsung from './components/pages/Brands/Samsung.jsx';
 import Apple from './components/pages/Brands/Apple.jsx';
 import ProductDetails from './components/pages/ProductDetails/ProductDetails.jsx';
 import Acer from './components/pages/Brands/Acer.jsx';
-import Dell from './components/pages/Brands/Dell.jsx';
 import Xiaomi from './components/pages/Brands/Xiaomi.jsx';
 import Hp from './components/pages/Brands/Hp.jsx';
 import Cart from './components/pages/Cart/Cart.jsx';
+import OnePlus from './components/pages/Brands/OnePlus.jsx';
 
 const router = createBrowserRouter([
   {
@@ -46,20 +45,21 @@ const router = createBrowserRouter([
       },
       {
         path: '/shop',
-        element: <PrivateRouter><Shop></Shop></PrivateRouter>
+        element: <PrivateRouter><Shop></Shop></PrivateRouter>,
+        loader: () => fetch('http://localhost:5000/products')
       },
       {
         path: '/addproduct',
-        element: <AddProduct></AddProduct>
+        element: <PrivateRouter><AddProduct></AddProduct></PrivateRouter>
       },
       {
         path: '/updateproduct/:id',
-        element: <UpdateProduct></UpdateProduct>,
+        element: <PrivateRouter><UpdateProduct></UpdateProduct></PrivateRouter>,
         loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
       },
       {
         path: '/productdetails/:id',
-        element: <ProductDetails></ProductDetails>,
+        element: <PrivateRouter><ProductDetails></ProductDetails></PrivateRouter>,
         loader: () => fetch('http://localhost:5000/products')
       },
       {
@@ -78,8 +78,8 @@ const router = createBrowserRouter([
         loader: () => fetch('http://localhost:5000/products')
       },
       {
-        path: '/dell',
-        element: <Dell></Dell>,
+        path: '/oneplus',
+        element: <OnePlus></OnePlus>,
         loader: () => fetch('http://localhost:5000/products')
       },
       {
