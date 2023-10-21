@@ -23,6 +23,7 @@ import Acer from './components/pages/Brands/Acer.jsx';
 import Dell from './components/pages/Brands/Dell.jsx';
 import Xiaomi from './components/pages/Brands/Xiaomi.jsx';
 import Hp from './components/pages/Brands/Hp.jsx';
+import Cart from './components/pages/Cart/Cart.jsx';
 
 const router = createBrowserRouter([
   {
@@ -90,6 +91,11 @@ const router = createBrowserRouter([
         path: '/xiaomi',
         element: <Xiaomi></Xiaomi>,
         loader: () => fetch('http://localhost:5000/products')
+      },
+      {
+        path: '/cart',
+        element: <Cart></Cart>,
+        loader: () => fetch('http://localhost:5000/cart')
       }
     ]
   },

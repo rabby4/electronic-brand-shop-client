@@ -18,6 +18,19 @@ const ProductDetails = () => {
         }
     };
 
+    const addToCart = (e) => {
+        e.preventDefault()
+        fetch('http://localhost:5000/cart', {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(product)
+        })
+            .then(res => res.json())
+            .then(data => console.log(data))
+    }
+
     return (
         <div className='container mx-auto'>
             <div className='my-10'>
@@ -36,11 +49,11 @@ const ProductDetails = () => {
                     <p><strong>Brand: </strong>{product.brand}</p>
                     <div className='max-w-[250px] flex items-center my-5'>
                         <button onClick={decrementCounter} className='btn rounded-none bg-transparent border-gray-200 text-lg'>-</button>
-                        <input type="text" value={counter} className="input rounded-none border border-gray-200 max-w-[70px]" />
+                        <input type="text" defaultValue={counter} className="input rounded-none border border-gray-200 max-w-[70px]" />
                         <button onClick={incrementCounter} className='btn rounded-none bg-transparent border-gray-200 text-lg'>+</button>
                     </div>
                     <div className="card-actions">
-                        <button className="btn bg-orange-600 hover:bg-orange-500 text-white px-10">Add to cart</button>
+                        <button onClick={addToCart} className="btn bg-orange-600 hover:bg-orange-500 text-white px-10">Add to cart</button>
                         <button className="btn bg-orange-600 hover:bg-orange-500 text-white px-10">Update product</button>
                     </div>
                 </div>
