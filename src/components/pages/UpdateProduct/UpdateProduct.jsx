@@ -38,9 +38,9 @@ const UpdateProduct = () => {
 
     }
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto lg:px-0 md:px-10 px-5'>
             <div className='my-10'>
-                <h2 className='text-center text-5xl font-bold'>Update Product</h2>
+                <h2 className='text-center lg:text-5xl md:text-4xl text-3xl font-bold'>Update Product</h2>
             </div>
             <div className='card flex-shrink-0 max-w-3xl shadow-xl mx-auto'>
                 <form onSubmit={handleUpdateProduct} className="card-body">
@@ -50,15 +50,15 @@ const UpdateProduct = () => {
                         </label>
                         <input type="text" placeholder={product.title} name='title' className="input input-bordered" required />
                     </div>
-                    <div className='flex gap-5'>
-                        <div className="form-control mb-3 w-1/2">
+                    <div className='flex md:flex-row flex-col gap-5'>
+                        <div className="form-control mb-3 md:w-1/2">
                             <label className="label">
                                 <span className="label-text font-semibold">Brand Name</span>
                             </label>
                             <input type="text" placeholder={product.brand} name='brand' className="input input-bordered" required />
                         </div>
 
-                        <div className="form-control w-1/2">
+                        <div className="form-control md:w-1/2">
                             <label className="label">
                                 <span className="label-text font-semibold">Select your product category</span>
                             </label>
@@ -81,14 +81,14 @@ const UpdateProduct = () => {
                         <input type="text" placeholder="Product Photo URL..." name='photo' className="input input-bordered" required />
                     </div>
 
-                    <div className='flex gap-5'>
-                        <div className="form-control mb-3 w-1/2">
+                    <div className='flex md:flex-row flex-col gap-5'>
+                        <div className="form-control mb-3 md:w-1/2">
                             <label className="label">
                                 <span className="label-text font-semibold">Price</span>
                             </label>
                             <input type="text" placeholder={product.price} name='price' className="input input-bordered" required />
                         </div>
-                        <div className="form-control mb-3 w-1/2">
+                        <div className="form-control mb-3 md:w-1/2">
                             <label className="label">
                                 <span className="label-text font-semibold">Ratting</span>
                             </label>

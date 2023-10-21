@@ -34,8 +34,8 @@ const ProductDetails = () => {
                 console.log(data)
                 if (data.acknowledged === true) {
                     Swal.fire(
-                        'Good job!',
-                        'Logged in successful with Google!',
+                        'Congratulations!',
+                        'Product added successfully on cart page!',
                         'success'
                     )
                     // window.location.reload()
@@ -45,17 +45,17 @@ const ProductDetails = () => {
 
     return (
         <div className='container mx-auto'>
-            <div className='my-10'>
+            <div className='my-10 lg:px-0 md:px-10 px-5'>
                 <Link to='/shop'>
                     <button className='flex items-center gap-2 font-medium hover:text-orange-500'><IoArrowUndoSharp></IoArrowUndoSharp>Back to Shop</button>
                 </Link>
             </div>
             <div className="card lg:card-side">
-                <div className='w-1/2'>
+                <div className='lg:w-1/2'>
                     <figure><img className='w-1/2' src={product.photo} alt={product.title} /></figure>
                 </div>
-                <div className="card-body w-1/2">
-                    <h2 className="text-4xl font-extrabold">{product.title}</h2>
+                <div className="card-body lg:w-1/2">
+                    <h2 className="md:text-4xl text-3xl md:font-extrabold font-bold">{product.title}</h2>
                     <h3 className='text-xl font-bold mt-5'>Price: <span className='text-gray-500'>${product.price}</span></h3>
                     <p className='my-5'>{product.description}</p>
                     <p><strong>SKU: </strong>{product._id}</p>
@@ -67,8 +67,8 @@ const ProductDetails = () => {
                         <button onClick={incrementCounter} className='btn rounded-none bg-transparent border-gray-200 text-lg'>+</button>
                     </div>
                     <div className="card-actions">
-                        <button onClick={addToCart} className="btn bg-orange-600 hover:bg-orange-500 text-white px-10">Add to cart</button>
-                        <button className="btn bg-orange-600 hover:bg-orange-500 text-white px-10">Update product</button>
+                        <button onClick={addToCart} className="btn bg-orange-600 hover:bg-orange-500 text-white md:px-10 px-5">Add to cart</button>
+                        <button className="btn bg-orange-600 hover:bg-orange-500 text-white md:px-10 px-5">Update product</button>
                     </div>
                 </div>
             </div>

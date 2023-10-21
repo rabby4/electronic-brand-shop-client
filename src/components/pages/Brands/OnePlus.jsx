@@ -7,7 +7,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const OnePlus = () => {
     const allProducts = useLoaderData()
-    const onePlusProduct = allProducts.filter(product => product.brand.toLowerCase() === 'one plus2'.toLowerCase())
+    const onePlusProduct = allProducts.filter(product => product.brand.toLowerCase() === 'one plus'.toLowerCase())
     return (
         <div>
             <div>

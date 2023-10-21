@@ -49,10 +49,10 @@ const Cart = () => {
         <div>
             <div className='container mx-auto'>
                 <div className='my-20'>
-                    <h2 className='flex items-center justify-center text-3xl font-semibold gap-4'><span className='cursor-pointer text-orange-500'>Shopping Cart</span> <MdArrowForwardIos></MdArrowForwardIos> <span className='cursor-pointer'>Checkout</span> <MdArrowForwardIos> </MdArrowForwardIos> <span className='cursor-pointer'>Order Complete</span></h2>
+                    <h2 className='flex items-center justify-center lg:text-3xl md:text-2xl text-lg font-semibold md:gap-4 gap-1'><span className='cursor-pointer text-orange-500'>Shopping Cart</span> <MdArrowForwardIos></MdArrowForwardIos> <span className='cursor-pointer'>Checkout</span> <MdArrowForwardIos> </MdArrowForwardIos> <span className='cursor-pointer'>Order Complete</span></h2>
                 </div>
-                <div className='grid grid-cols-3 gap-5'>
-                    <div className='col-span-2'>
+                <div className='grid grid-cols-3 gap-5 lg:px-0 md:px-10 px-5'>
+                    <div className='lg:col-span-2 md:col-span-3 col-span-3'>
                         <div className="overflow-x-auto">
                             <table className="table">
                                 {/* head */}
@@ -70,7 +70,7 @@ const Cart = () => {
                                     {/* rows */}
                                     {
                                         restCartItem?.map(item => <tr key={item._id}>
-                                            <td className='w-2/12'>
+                                            <td className='md:w-2/12'>
                                                 <div className="flex items-center space-x-1">
                                                     <div className="avatar">
                                                         <div className="w-32 h-24">
@@ -80,7 +80,7 @@ const Cart = () => {
 
                                                 </div>
                                             </td>
-                                            <td className='w-5/12'>
+                                            <td className='md:w-5/12'>
                                                 <p className='font-semibold'>{item.title}</p>
 
                                             </td>
