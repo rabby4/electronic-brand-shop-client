@@ -12,7 +12,7 @@ const Navbar = () => {
             .catch()
     }
     useEffect(() => {
-        fetch('http://localhost:5000/cart')
+        fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/cart')
             .then(res => res.json())
             .then(data => setCartItem(data))
     }, [])

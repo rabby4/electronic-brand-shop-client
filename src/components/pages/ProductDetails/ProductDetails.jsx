@@ -22,7 +22,7 @@ const ProductDetails = () => {
     };
 
     const addToCart = () => {
-        fetch('http://localhost:5000/cart', {
+        fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/cart', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

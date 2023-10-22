@@ -21,7 +21,7 @@ const Cart = () => {
     };
 
     const deleteProduct = _id => {
-        fetch(`http://localhost:5000/cart/${_id}`, {
+        fetch(`https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/cart/${_id}`, {
             method: 'delete'
         })
             .then(res => res.json())

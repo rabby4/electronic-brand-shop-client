@@ -33,7 +33,7 @@ const router = createBrowserRouter([
       {
         path: '/',
         element: <Home></Home>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/products')
       },
       {
         path: '/register',
@@ -46,7 +46,7 @@ const router = createBrowserRouter([
       {
         path: '/shop',
         element: <Shop></Shop>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/products')
       },
       {
         path: '/addproduct',
@@ -55,47 +55,47 @@ const router = createBrowserRouter([
       {
         path: '/updateproduct/:id',
         element: <PrivateRouter><UpdateProduct></UpdateProduct></PrivateRouter>,
-        loader: ({ params }) => fetch(`http://localhost:5000/products/${params.id}`)
+        loader: ({ params }) => fetch(`https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/products/${params.id}`)
       },
       {
         path: '/productdetails/:id',
         element: <PrivateRouter><ProductDetails></ProductDetails></PrivateRouter>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/products')
       },
       {
         path: '/samsung',
         element: <Samsung></Samsung>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/products')
       },
       {
         path: '/apple',
         element: <Apple></Apple>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/products')
       },
       {
         path: '/acer',
         element: <Acer></Acer>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/products')
       },
       {
         path: '/oneplus',
         element: <OnePlus></OnePlus>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/products')
       },
       {
         path: '/hp',
         element: <Hp></Hp>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/products')
       },
       {
         path: '/xiaomi',
         element: <Xiaomi></Xiaomi>,
-        loader: () => fetch('http://localhost:5000/products')
+        loader: () => fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/products')
       },
       {
         path: '/cart',
         element: <Cart></Cart>,
-        loader: () => fetch('http://localhost:5000/cart')
+        loader: () => fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/cart')
       }
     ]
   },
