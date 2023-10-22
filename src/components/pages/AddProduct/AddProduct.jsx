@@ -32,6 +32,8 @@ const AddProduct = () => {
                         'success'
                     )
                 }
+                form.reset()
+
             })
 
 

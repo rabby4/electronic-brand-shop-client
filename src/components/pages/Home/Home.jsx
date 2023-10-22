@@ -1,4 +1,3 @@
-import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -147,13 +146,7 @@ const Home = () => {
                                                 <p>{product.description.slice(0, 90)}...</p>
                                                 <div className="flex justify-between my-5">
                                                     <div className="space-y-3">
-                                                        <div className="rating">
-                                                            <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                            <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                            <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                            <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                            <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                        </div>
+                                                        <h2 className="text-base font-semibold flex items-center">Ratting: <div className="rating mx-2 w-4"><input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" /></div> {product.ratting}</h2>
                                                         <h2 className="text-xl font-semibold">Price: ${product.price}</h2>
                                                     </div>
                                                     <div className="card-actions flex-col justify-end space-y-3">

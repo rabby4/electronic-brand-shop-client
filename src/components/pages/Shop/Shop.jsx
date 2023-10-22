@@ -13,7 +13,7 @@ const Shop = () => {
                     <div className={allProducts.length !== 0 && 'block'}>
                         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">
                             {
-                                allProducts.slice(0, 8).map(product => <div key={product._id}>
+                                allProducts.map(product => <div key={product._id}>
                                     <div className="card bg-base-100 shadow-lg">
                                         <figure><img className="w-2/3" src={product.photo} alt="Shoes" /></figure>
                                         <div className="card-body">
@@ -21,13 +21,7 @@ const Shop = () => {
                                             <p>{product.description.slice(0, 90)}...</p>
                                             <div className="flex justify-between my-5">
                                                 <div className="space-y-3">
-                                                    <div className="rating">
-                                                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                    </div>
+                                                    <h2 className="text-base font-semibold flex items-center">Ratting: <div className="rating mx-2 w-4"><input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" /></div> {product.ratting}</h2>
                                                     <h2 className="text-xl font-semibold">Price: ${product.price}</h2>
                                                 </div>
                                                 <div className="card-actions flex-col justify-end space-y-3">

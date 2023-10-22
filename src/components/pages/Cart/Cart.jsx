@@ -5,16 +5,10 @@ import Swal from 'sweetalert2';
 
 const Cart = () => {
     const cartItem = useLoaderData()
-
     const [restCartItem, setRestCartItem] = useState(cartItem)
-    const [counter, setCounter] = useState(0);
-    // console.log(cartItem)
 
-    // useEffect(() => {
-    //     fetch('http://localhost:5000/cart')
-    //         .then(res => res.json())
-    //         .then(data => setCartItem(data))
-    // }, [])
+
+    const [counter, setCounter] = useState(0);
 
     const incrementCounter = () => {
         setCounter(counter + 1);

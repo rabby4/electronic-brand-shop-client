@@ -26,32 +26,32 @@ const Samsung = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://portotheme.com/html/porto_ecommerce/assets/images/demoes/demo21/slider/slide1.jpg)` }}>
+                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.samsung.com/is/image/samsung/assets/us/home/10092023/HP-FT03-KV-Tab-S9-FE-Buds-FE-1440x640-v1-D.jpeg?$LazyLoad_Home_JPG$)` }}>
                         <div className='container text-left space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>start the revolution</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>drone pro 4</h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>Tab s9 fe series</h2>
                             <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$499</strong> </h2>
-                            <Link to='/shop'><button className='btn bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
+                            <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://portotheme.com/html/porto_ecommerce/assets/images/demoes/demo21/slider/slide2.jpg)` }}>
-                        <div className='container text-left space-y-3'>
+                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.samsung.com/is/image/samsung/assets/us/home/10182023/HP-FT03-KV-Z-Fold5-lifestyle-1440x640-D.jpeg?imwidth=1366)` }}>
+                        <div className='container text-right space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>amazing deals</h2>
                             <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>smartphone</h2>
                             <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$199</strong> </h2>
-                            <Link to='/shop'><button className='btn bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
+                            <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://portotheme.com/html/porto_ecommerce/assets/images/demoes/demo21/slider/slide3.jpg)` }}>
-                        <div className='container text-left space-y-3'>
+                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.samsung.com/is/image/samsung/assets/us/home/10112023/HP-FT03-KV-S23-Ultra-1440x640-D.jpeg?$LazyLoad_Home_JPG$)` }}>
+                        <div className='container text-left space-y-3 text-white'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>best price of the year</h2>
                             <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>top accessories</h2>
                             <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$19</strong> </h2>
-                            <Link to='/shop'><button className='btn bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
+                            <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -73,13 +73,7 @@ const Samsung = () => {
                                             <p>{product.description.slice(0, 90)}...</p>
                                             <div className="flex justify-between my-5">
                                                 <div className="space-y-3">
-                                                    <div className="rating">
-                                                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                        <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" />
-                                                    </div>
+                                                    <h2 className="text-base font-semibold flex items-center">Ratting: <div className="rating mx-2 w-4"><input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-500" /></div> {product.ratting}</h2>
                                                     <h2 className="text-xl font-semibold">Price: ${product.price}</h2>
                                                 </div>
                                                 <div className="card-actions flex-col justify-end space-y-3">
