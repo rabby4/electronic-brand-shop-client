@@ -21,7 +21,7 @@ const ProductDetails = () => {
         }
     };
 
-    const addToCart = (e) => {
+    const addToCart = () => {
         fetch('http://localhost:5000/cart', {
             method: 'POST',
             headers: {
