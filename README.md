@@ -8,4 +8,4 @@ About of Electronic brand shop:
 - User can see all the product on the shop page.
 - User can Register/Login/Login.
 
-Live link:
+Live link: https://brand-shop-6ed3e.web.app
