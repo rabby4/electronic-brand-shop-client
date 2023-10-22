@@ -7,7 +7,7 @@ import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 const OnePlus = () => {
     const allProducts = useLoaderData()
-    const onePlusProduct = allProducts.filter(product => product.brand.toLowerCase() === 'one plus'.toLowerCase())
+    const onePlusProduct = allProducts.filter(product => product.brand.toLowerCase() === ('one plus'.toLowerCase()))
     return (
         <div>
             <div>
@@ -26,31 +26,31 @@ const OnePlus = () => {
                     className="mySwiper"
                 >
                     <SwiperSlide>
-                        <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://techlingo.co/wp-content/uploads/2018/10/OnePlus-6T-Banner-1500x500.jpg)` }}>
+                        <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://techlingo.co/wp-content/uploads/2018/10/OnePlus-6T-Banner-1500x500.jpg)` }}>
+                            <div className='container text-left space-y-3 text-white'>
+                                <h2 className='md:text-3xl text-xl font-medium uppercase'>start the revolution</h2>
+                                <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>one plus 6t</h2>
+                                <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$320</strong> </h2>
+                                <Link to='/shop'><button className='btn border-none bg-gray-700 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
+                            </div>
+                        </div>
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.gadgetshieldz.com/images/thumbnails/1575/700/detailed/287/Oneplus-Nord-Buds-Sandstone-Orange-Skins.jpg)` }}>
                             <div className='container text-left text-white space-y-3'>
-                                <h2 className='text-3xl font-medium uppercase'>start the revolution</h2>
-                                <h2 className='text-6xl font-bold uppercase'>drone pro 4</h2>
-                                <h2 className='text-4xl font-medium uppercase'>From <strong>$499</strong> </h2>
+                                <h2 className='md:text-3xl text-xl font-medium uppercase'>amazing deals</h2>
+                                <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>one plus nord buds</h2>
+                                <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$279</strong> </h2>
                                 <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                             </div>
                         </div>
                     </SwiperSlide>
                     <SwiperSlide>
-                        <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.gadgetshieldz.com/images/thumbnails/1575/700/detailed/287/Oneplus-Nord-Buds-Sandstone-Orange-Skins.jpg)` }}>
+                        <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.penguin.com.bd/wp-content/uploads/2018/03/4f034cd900ab610f7b0d9a8bca2b5d83_1920_0.jpg)` }}>
                             <div className='container text-left text-white space-y-3'>
-                                <h2 className='text-3xl font-medium uppercase'>amazing deals</h2>
-                                <h2 className='text-6xl font-bold uppercase'>smartphone</h2>
-                                <h2 className='text-4xl font-medium uppercase'>From <strong>$199</strong> </h2>
-                                <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
-                            </div>
-                        </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                        <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.penguin.com.bd/wp-content/uploads/2018/03/4f034cd900ab610f7b0d9a8bca2b5d83_1920_0.jpg)` }}>
-                            <div className='container text-left text-white space-y-3'>
-                                <h2 className='text-3xl font-medium uppercase'>best price of the year</h2>
-                                <h2 className='text-6xl font-bold uppercase'>top accessories</h2>
-                                <h2 className='text-4xl font-medium uppercase'>From <strong>$19</strong> </h2>
+                                <h2 className='md:text-3xl text-xl font-medium uppercase'>best price of the year</h2>
+                                <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>one plus headphones</h2>
+                                <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$99</strong> </h2>
                                 <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                             </div>
                         </div>
@@ -60,7 +60,7 @@ const OnePlus = () => {
                 <div className="container mx-auto">
                     <div className='lg:px-0 md:px-10 px-5'>
                         <div className='my-20'>
-                            <h2 className='lg:text-5xl md:text-4xl text-3xl font-bold text-center'>Samsung Product</h2>
+                            <h2 className='lg:text-5xl md:text-4xl text-3xl font-bold text-center'>One Plus Product</h2>
                         </div>
                         <div className={onePlusProduct.length !== 0 && 'block'}>
                             <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">

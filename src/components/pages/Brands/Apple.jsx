@@ -27,31 +27,31 @@ const Apple = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.apple.com/v/macbook-air/q/images/overview/macbook_air_m1__dxctrdvvxm4i_large.jpg)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.apple.com/v/macbook-air/q/images/overview/macbook_air_m1__dxctrdvvxm4i_large.jpg)` }}>
                         <div className='container text-left text-white space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>start the revolution</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>drone pro 4</h2>
-                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$499</strong> </h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>macbook air m1</h2>
+                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$890</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.apple.com/v/watch/bf/images/overview/series-9/tile_s9_avail__h13v168dzseq_large.jpg)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.apple.com/v/watch/bf/images/overview/series-9/tile_s9_avail__h13v168dzseq_large.jpg)` }}>
                         <div className='container text-left text-white space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>amazing deals</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>smartphone</h2>
-                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$199</strong> </h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>smart watch tile s9</h2>
+                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$99</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-top' style={{ backgroundImage: `url(https://www.screenstouch.co.uk/wp-content/uploads/2020/04/main-shop-banner.jpg)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-top' style={{ backgroundImage: `url(https://www.screenstouch.co.uk/wp-content/uploads/2020/04/main-shop-banner.jpg)` }}>
                         <div className='container text-left text-white space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>best price of the year</h2>
                             <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>top accessories</h2>
-                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$19</strong> </h2>
+                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$129</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>

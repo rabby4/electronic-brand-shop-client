@@ -1,6 +1,11 @@
 # Electronic Brand Shop
 
-:
+About of Electronic brand shop:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 6 different type of brand, each brand have different product
+- Every product have ratting functionality.
+- Add to cart option, user can add multiple product on cart.
+- User can see all the product on the shop page.
+- User can Register/Login/Login.
+
+Live link:

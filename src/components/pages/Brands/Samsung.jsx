@@ -26,31 +26,31 @@ const Samsung = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.samsung.com/is/image/samsung/assets/us/home/10092023/HP-FT03-KV-Tab-S9-FE-Buds-FE-1440x640-v1-D.jpeg?$LazyLoad_Home_JPG$)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.samsung.com/is/image/samsung/assets/us/home/10092023/HP-FT03-KV-Tab-S9-FE-Buds-FE-1440x640-v1-D.jpeg?$LazyLoad_Home_JPG$)` }}>
                         <div className='container text-left space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>start the revolution</h2>
                             <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>Tab s9 fe series</h2>
-                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$499</strong> </h2>
+                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$200</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.samsung.com/is/image/samsung/assets/us/home/10182023/HP-FT03-KV-Z-Fold5-lifestyle-1440x640-D.jpeg?imwidth=1366)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.samsung.com/is/image/samsung/assets/us/home/10182023/HP-FT03-KV-Z-Fold5-lifestyle-1440x640-D.jpeg?imwidth=1366)` }}>
                         <div className='container text-right space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>amazing deals</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>smartphone</h2>
-                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$199</strong> </h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>note 20 ultra</h2>
+                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$159</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.samsung.com/is/image/samsung/assets/us/home/10112023/HP-FT03-KV-S23-Ultra-1440x640-D.jpeg?$LazyLoad_Home_JPG$)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.samsung.com/is/image/samsung/assets/us/home/10112023/HP-FT03-KV-S23-Ultra-1440x640-D.jpeg?$LazyLoad_Home_JPG$)` }}>
                         <div className='container text-left space-y-3 text-white'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>best price of the year</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>top accessories</h2>
-                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$19</strong> </h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>best video quality</h2>
+                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$109</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>

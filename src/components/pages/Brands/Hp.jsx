@@ -27,31 +27,31 @@ const Hp = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.hp.com/ch-de/shop/html/Merch/Banners/Hero_background-DESKTOP_5ee72b7c9d5e5.png)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.hp.com/ch-de/shop/html/Merch/Banners/Hero_background-DESKTOP_5ee72b7c9d5e5.png)` }}>
                         <div className='container text-right space-y-3 text-white'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>start the revolution</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>drone pro 4</h2>
-                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$499</strong> </h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>HP Monitor</h2>
+                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$320</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-gray-700 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.hp.com/gb-en/shop/Html/Merch/Banners/24C1-Europe-Cyber-SEO-ODP-Hero-1920x300_6502c13ee4749.png)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.hp.com/gb-en/shop/Html/Merch/Banners/24C1-Europe-Cyber-SEO-ODP-Hero-1920x300_6502c13ee4749.png)` }}>
                         <div className='container text-left text-white space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>amazing deals</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>smartphone</h2>
-                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$199</strong> </h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>Hp laptop</h2>
+                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$279</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.squarespace-cdn.com/content/v1/56149c3ae4b0b2fafb9f80b0/1444492534464-1HJ7IQWWLLA00G194CNG/Dublin_Teaser-BANNER.png?format=2500w)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.squarespace-cdn.com/content/v1/56149c3ae4b0b2fafb9f80b0/1444492534464-1HJ7IQWWLLA00G194CNG/Dublin_Teaser-BANNER.png?format=2500w)` }}>
                         <div className='container text-left text-white space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>best price of the year</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>top accessories</h2>
-                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$19</strong> </h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>Smart watch</h2>
+                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$99</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
@@ -61,7 +61,7 @@ const Hp = () => {
             <div className="container mx-auto">
                 <div className='lg:px-0 md:px-10 px-5'>
                     <div className='my-20'>
-                        <h2 className='lg:text-5xl md:text-4xl text-3xl font-bold text-center'>Apple Products</h2>
+                        <h2 className='lg:text-5xl md:text-4xl text-3xl font-bold text-center'>HP Products</h2>
                     </div>
                     <div className={hpProduct.length !== 0 && 'block'}>
                         <div className="grid lg:grid-cols-4 md:grid-cols-2 gap-8">

@@ -32,8 +32,8 @@ const Cart = () => {
                         'Your 1 product has been deleted from cart.',
                         'success'
                     )
-                    const remainingUsers = restCartItem.filter(user => user._id !== _id)
-                    setRestCartItem(remainingUsers)
+                    const remainingProduct = restCartItem.filter(product => product._id !== _id)
+                    setRestCartItem(remainingProduct)
                 }
                 // window.location.reload()
             })

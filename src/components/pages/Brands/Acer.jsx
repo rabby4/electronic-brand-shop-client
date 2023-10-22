@@ -27,31 +27,31 @@ const Acer = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://acerthailand.com/wp-content/uploads/2022/11/acer-laptop-aspire-vero-main-banner-l_Secondary-Hero-XL-scaled.webp)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://acerthailand.com/wp-content/uploads/2022/11/acer-laptop-aspire-vero-main-banner-l_Secondary-Hero-XL-scaled.webp)` }}>
                         <div className='container text-left space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>start the revolution</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>drone pro 4</h2>
-                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$499</strong> </h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>acer laptop</h2>
+                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$550</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.acer.com/is/image/acer/acer-monitor-cb1-banner-l-1?$responsive$)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.acer.com/is/image/acer/acer-monitor-cb1-banner-l-1?$responsive$)` }}>
                         <div className='container text-left space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>amazing deals</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>smartphone</h2>
-                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$199</strong> </h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>Acer monitor</h2>
+                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$299</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.acer.com/is/image/acer/acer-laptop-swift-go-Intel-main-banner-3:Primary-Hero-XL)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://images.acer.com/is/image/acer/acer-laptop-swift-go-Intel-main-banner-3:Primary-Hero-XL)` }}>
                         <div className='container text-left text-white space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>best price of the year</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>top accessories</h2>
-                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$19</strong> </h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>Old laptop</h2>
+                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$390</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>

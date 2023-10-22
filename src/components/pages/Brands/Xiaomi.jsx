@@ -27,30 +27,30 @@ const Xiaomi = () => {
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://infinitystore.lk/wp-content/uploads/2021/11/Redmi-Buds-3-Pro-banner.jpg)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://infinitystore.lk/wp-content/uploads/2021/11/Redmi-Buds-3-Pro-banner.jpg)` }}>
                         <div className='container text-left space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>start the revolution</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>drone pro 4</h2>
-                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$499</strong> </h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>redmi buds 3 pro</h2>
+                            <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$89</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.91-cdn.com/hub/wp-content/uploads/2023/02/Upcoming-Xiaomi-Redmi-Poco-phones-in-2023.jpg)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://www.91-cdn.com/hub/wp-content/uploads/2023/02/Upcoming-Xiaomi-Redmi-Poco-phones-in-2023.jpg)` }}>
                         <div className='container text-left text-white space-y-3'>
-                            <h2 className='md:text-3xl text-xl font-medium uppercase'>amazing deals</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>smartphone</h2>
+                            <h2 className='md:text-3xl text-xl font-medium uppercase'>upcoming deals</h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>redmi poco</h2>
                             <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$199</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
-                    <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://cdn.shopify.com/s/files/1/1645/3149/files/kami-hero-banner4.jpg?v=1638953335)` }}>
+                    <div className='hero md:min-h-[600px] min-h-[400px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://cdn.shopify.com/s/files/1/1645/3149/files/kami-hero-banner4.jpg?v=1638953335)` }}>
                         <div className='container text-left space-y-3'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>best price of the year</h2>
-                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>top accessories</h2>
+                            <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>top Cameras</h2>
                             <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$19</strong> </h2>
                             <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
