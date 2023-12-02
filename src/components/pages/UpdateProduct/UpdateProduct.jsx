@@ -16,7 +16,7 @@ const UpdateProduct = () => {
         const updatedProduct = { title, brand, category, photo, price, ratting }
         console.log(updatedProduct)
 
-        fetch(`https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/products/${product._id}`, {
+        fetch(`https://electronic-brand-shop-server.vercel.app/products/${product._id}`, {
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -34,8 +34,6 @@ const UpdateProduct = () => {
                     )
                 }
             })
-
-
     }
     return (
         <div className='container mx-auto lg:px-0 md:px-10 px-5'>

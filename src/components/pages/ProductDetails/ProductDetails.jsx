@@ -1,15 +1,18 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router-dom';
 import { IoArrowUndoSharp } from 'react-icons/io5';
 import Swal from 'sweetalert2';
+import { AuthContext } from '../../provider/AuthProvider';
 
 const ProductDetails = () => {
+    const { user } = useContext(AuthContext);
+    const userEmail = user.email;
     const [counter, setCounter] = useState(0);
     const allProducts = useLoaderData()
     const { id } = useParams()
-    const product = allProducts.find(product => product._id === id)
-
-    console.log(product)
+    const product = allProducts.find(product => product._id === id);
+    const { title, brand, category, description, photo, price, ratting } = product;
+    const newProduct = { title, brand, category, description, photo, price, ratting, userEmail }
 
     const incrementCounter = () => {
         setCounter(counter + 1);
@@ -22,16 +25,15 @@ const ProductDetails = () => {
     };
 
     const addToCart = () => {
-        fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/cart', {
+        fetch('https://electronic-brand-shop-server.vercel.app/cart', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
             },
-            body: JSON.stringify(product)
+            body: JSON.stringify(newProduct)
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
                 if (data.acknowledged === true) {
                     Swal.fire(
                         'Congratulations!',

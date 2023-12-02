@@ -28,31 +28,31 @@ const Home = () => {
             >
                 <SwiperSlide>
                     <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://portotheme.com/html/porto_ecommerce/assets/images/demoes/demo21/slider/slide1.jpg)` }}>
-                        <div className='container text-left space-y-3'>
+                        <div className='container text-left space-y-3 dark:text-black'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>start the revolution</h2>
                             <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>drone pro 4</h2>
                             <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$499</strong> </h2>
-                            <Link to='/shop'><button className='btn bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
+                            <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://portotheme.com/html/porto_ecommerce/assets/images/demoes/demo21/slider/slide2.jpg)` }}>
-                        <div className='container text-left space-y-3'>
+                        <div className='container text-left space-y-3 dark:text-black'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>amazing deals</h2>
                             <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>smartphone</h2>
                             <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$199</strong> </h2>
-                            <Link to='/shop'><button className='btn bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
+                            <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className='hero min-h-[600px] lg:px-0 md:px-10 px-10 bg-cover bg-center' style={{ backgroundImage: `url(https://portotheme.com/html/porto_ecommerce/assets/images/demoes/demo21/slider/slide3.jpg)` }}>
-                        <div className='container text-left space-y-3'>
+                        <div className='container text-left space-y-3 dark:text-black'>
                             <h2 className='md:text-3xl text-xl font-medium uppercase'>best price of the year</h2>
                             <h2 className='lg:text-6xl md:text-5xl text-4xl font-bold uppercase'>top accessories</h2>
                             <h2 className='md:text-4xl text-2xl font-medium uppercase'>From <strong>$19</strong> </h2>
-                            <Link to='/shop'><button className='btn bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
+                            <Link to='/shop'><button className='btn border-none bg-orange-600 hover:bg-orange-500 text-white px-8 mt-3'>Buy Now</button></Link>
                         </div>
                     </div>
                 </SwiperSlide>
@@ -65,62 +65,62 @@ const Home = () => {
                     </div>
                     <div className='grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 md:gap-8 gap-5'>
                         <Link to='/samsung'>
-                            <div className="card bg-base-100 md:shadow-lg shadow-md">
+                            <div className="card bg-base-100 dark:bg-white md:shadow-lg shadow-md">
                                 <figure className="px-10 pt-10">
                                     <img src="https://www.freepnglogos.com/uploads/original-samsung-logo-10.png" alt="Samsung" className="rounded-xl w-40" />
                                 </figure>
                                 <div className="card-body items-center text-center">
-                                    <h2 className="text-xl font-bold">Samsung</h2>
+                                    <h2 className="text-xl dark:text-black font-bold">Samsung</h2>
                                 </div>
                             </div>
                         </Link>
                         <Link to='/hp'>
-                            <div className="card bg-base-100 md:shadow-lg shadow-md">
+                            <div className="card bg-base-100 dark:bg-white md:shadow-lg shadow-md">
                                 <figure className="px-10 pt-10">
                                     <img src="https://1000logos.net/wp-content/uploads/2017/02/HP-Logo-2012.png" alt="HP" className="rounded-xl w-40" />
                                 </figure>
                                 <div className="card-body items-center text-center">
-                                    <h2 className="text-xl font-bold">HP</h2>
+                                    <h2 className="text-xl dark:text-black font-bold">HP</h2>
                                 </div>
                             </div>
                         </Link>
                         <Link to='/acer'>
-                            <div className="card bg-base-100 md:shadow-lg shadow-md">
+                            <div className="card bg-base-100 dark:bg-white md:shadow-lg shadow-md">
                                 <figure className="px-10 pt-10">
                                     <img src="https://logos-world.net/wp-content/uploads/2022/11/Acer-Logo-2001.png" alt="acer" className="rounded-xl w-40" />
                                 </figure>
                                 <div className="card-body items-center text-center">
-                                    <h2 className="text-xl font-bold">Acer</h2>
+                                    <h2 className="text-xl dark:text-black font-bold">Acer</h2>
                                 </div>
                             </div>
                         </Link>
                         <Link to='/apple'>
-                            <div className="card bg-base-100 md:shadow-lg shadow-md">
+                            <div className="card bg-base-100 dark:bg-white md:shadow-lg shadow-md">
                                 <figure className="px-10 pt-10">
                                     <img src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" alt="apple" className="rounded-xl w-40" />
                                 </figure>
                                 <div className="card-body items-center text-center">
-                                    <h2 className="text-xl font-bold">Apple</h2>
+                                    <h2 className="text-xl dark:text-black font-bold">Apple</h2>
                                 </div>
                             </div>
                         </Link>
                         <Link to='/xiaomi'>
-                            <div className="card bg-base-100 md:shadow-lg shadow-md">
+                            <div className="card bg-base-100 dark:bg-white md:shadow-lg shadow-md">
                                 <figure className="px-10 pt-10">
                                     <img src="https://logos-world.net/wp-content/uploads/2020/07/Xiaomi-Logo.jpg" alt="Xiaomi" className="rounded-xl w-40" />
                                 </figure>
                                 <div className="card-body items-center text-center">
-                                    <h2 className="text-xl font-bold">Xiaomi</h2>
+                                    <h2 className="text-xl dark:text-black font-bold">Xiaomi</h2>
                                 </div>
                             </div>
                         </Link>
                         <Link to='/oneplus'>
-                            <div className="card bg-base-100 md:shadow-lg shadow-md">
+                            <div className="card bg-base-100 dark:bg-white md:shadow-lg shadow-md">
                                 <figure className="px-10 pt-10">
                                     <img src="https://1000logos.net/wp-content/uploads/2022/11/OnePlus-Logo.png" alt="dell" className="rounded-xl w-40" />
                                 </figure>
                                 <div className="card-body items-center text-center">
-                                    <h2 className="text-xl font-bold">One Plus</h2>
+                                    <h2 className="text-xl dark:text-black font-bold">One Plus</h2>
                                 </div>
                             </div>
                         </Link>
@@ -178,8 +178,8 @@ const Home = () => {
             <div className='bg-cover bg-center' style={{ backgroundImage: 'url(https://portotheme.com/html/porto_ecommerce/assets/images/banners/banner-top.jpg)' }}>
                 <div className='py-20 lg:px-0 md:px-10 px-5'>
                     <div className='container mx-auto text-left space-y-5'>
-                        <h2 className='lg:text-6xl md:text-5xl text-3xl font-bold'>Big Sale Up To 70% Off</h2>
-                        <h2 className='md:text-xl text-base'>Exclusive Offers For Limited Time</h2>
+                        <h2 className='lg:text-6xl md:text-5xl text-3xl font-bold dark:text-black'>Big Sale Up To 70% Off</h2>
+                        <h2 className='md:text-xl text-base dark:text-black'>Exclusive Offers For Limited Time</h2>
                         <button className='btn bg-orange-500 text-white hover:bg-gray-700 hover:text-white border-0 md:text-md text-sm'>Explore Your Order</button>
                     </div>
                 </div>

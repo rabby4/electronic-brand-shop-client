@@ -1,11 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { MdArrowForwardIos } from 'react-icons/md';
 import Swal from 'sweetalert2';
+import { AuthContext } from '../../provider/AuthProvider';
 
 const Cart = () => {
+    const { user } = useContext(AuthContext);
+    const userEmail = user?.email;
     const cartItem = useLoaderData()
     const [restCartItem, setRestCartItem] = useState(cartItem)
+    const cartProducts = restCartItem.filter(product => product.userEmail === userEmail);
 
 
     const [counter, setCounter] = useState(0);
@@ -21,7 +25,7 @@ const Cart = () => {
     };
 
     const deleteProduct = _id => {
-        fetch(`https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/cart/${_id}`, {
+        fetch(`https://electronic-brand-shop-server.vercel.app/cart/${_id}`, {
             method: 'delete'
         })
             .then(res => res.json())
@@ -32,7 +36,7 @@ const Cart = () => {
                         'Your 1 product has been deleted from cart.',
                         'success'
                     )
-                    const remainingProduct = restCartItem.filter(product => product._id !== _id)
+                    const remainingProduct = cartProducts.filter(product => product._id !== _id)
                     setRestCartItem(remainingProduct)
                 }
                 // window.location.reload()
@@ -63,7 +67,7 @@ const Cart = () => {
                                 <tbody>
                                     {/* rows */}
                                     {
-                                        restCartItem?.map(item => <tr key={item._id}>
+                                        cartProducts?.map(item => <tr key={item._id}>
                                             <td className='md:w-2/12'>
                                                 <div className="flex items-center space-x-1">
                                                     <div className="avatar">

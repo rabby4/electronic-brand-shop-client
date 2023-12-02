@@ -1,4 +1,6 @@
+import { useContext } from "react";
 import Swal from "sweetalert2";
+import { AuthContext } from "../../provider/AuthProvider";
 
 const AddProduct = () => {
 
@@ -15,7 +17,7 @@ const AddProduct = () => {
         const newProduct = { title, brand, category, photo, price, ratting, description }
         console.log(newProduct)
 
-        fetch('https://electronic-brand-shop-server-6wuv5y0n2-rabby4s-projects.vercel.app/products', {
+        fetch('https://electronic-brand-shop-server.vercel.app/products', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'
